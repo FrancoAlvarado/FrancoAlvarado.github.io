@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+     /*   DAR FORMATO AL MENU DEL ENCABEZADO   */
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*   ME VA A PERMITIR HACER CLICK SOBRE LAS OPCIONES DEL MENU DEL ENCABEZADO   */
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    /*   FORMATO DEL MENU   */
+    background: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    /*   FORMATO DEL MENU   */
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    /*   FORMATO DEL LOGO FRANCO ALVARADO   */
+    font-family: 'Righteous';
+    font-size: 25px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    /*   FORMATO DE LA LISTA DEL MENU   */
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    /*   FORMATO DE LA LISTA DEL MENU   */
+    text-align: none;
+    color:aliceblue;
+    margin: 0 10px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    /*   FORMATO DE LA LISTA DEL MENU   */
+    color:aqua;
+}
+.nav-responsive{
+    /*   FORMATO DE LA BARRA QUE OCULTA Y MUESTRA EL MENU   */
+    background-color: #1CB698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*    FORMATO DE TODO EL APARTADO INICIO    */
+.inicio{
+    /*   FORMATO DEL FONDO DEL APARTADO INICIO   */
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/fondo.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color: azure;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    /*   FORMATO DEL CONTENIDO DEL APARTADO INICIO   */
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    /*   FORMATO DE LA IMAGEN DEL APARTADO INICIO (IMAGEN DE LA PERSONA DEL CURRICULUM)   */
+    margin-top: 40px;
+    border: 10px solid #1ca9b6;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.inicio .contenido-banner h1{
+    /*   FORMATO DEL TEXTO QUE IDENTIFICA EL NOMBRE Y APELLIDO QUE ACOMPAÑA A LA IMAGEN (APARTADO INICIO)   */
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    /*   FORMATO DEL TEXTO QUE IDENTIFICA EL TITULO DE GRADO DE LA PERSONA QUE ACOMPAÑA A LA IMAGEN (APARTADO INICIO)   */
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    /*   FORMATO DEL ACCESO A LAS REDES SOCIALES (APARTAADO INICIO)   */
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    /*   FORMATO AL ACERCAR EL CURSOR SOBRE LAS REDES SOCIALES   */
+    background-color: #1ca9b6;
+}
+
+
+/*   FORMATO DE TODO EL APARTADO SOBRE MI    */
+.sobremi{   
+    /*   FORMATO DEL CONTENIDO DEL TEXTO DEL APARTADO SOBRE MI   */
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+     /*   FORMATO DEL CONTENIDO DEL TEXTO DEL APARTADO SOBRE MI (ALINEACION)  */
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+     /*   FORMATO DEL TITULO DEL APARTADO SOBRE MI   */
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+     /*   FORMATO DEL TEXTO DE LA PRESENTACION EN EL APARTADO SOBRE MI   */
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    /*   FORMATO DEL INICIO DE LA PRESENTACION DESTACANDO QUIEN ES LA PERSONA QUE SE PRESENTA   */
+    color: #1CB698;
+    font-weight: bold;
+}
+.sobremi .fila{
+    /*   DAR FORMATO EN 2 FILAS DEL CONTENIDO DEL APARTADO SOBRE MI   */
+    display: flex;
+}
+.sobremi .fila .col{
+    /*   SEPARACION DE LAS FILAS DEL CONTENIDO DEL APARTADO SOBRE MI   */
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    /*   FORMATO DE LOS TITULOS DE LAS FILAS   */
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    /*   DAR FORMATO DE LISTA AL CONTENIDO DE LAS FILAS   */
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    /*   SEPARACION DEL CONTENIDO DE LA PRIMER FILA DE DATOS PERSONALES   */
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    /*   FORMATO DEL ENUNCIADO DE LA LISTA   */
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    /*   DAR FORMATO DE LA FILA INTERESES   */
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    /*    DAR FORMATO DE LA FILA INTERESES   */
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    /*   DAR FORMATO AL ACERCAR EL CURSOR SOBRE LOS ITEMS DE LOS INTERESES   */
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    /*   DAR FORMATO AL ACERCAR EL CURSOR SOBRE LOS ITEMS DE LOS INTERESES   */
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*   FORMATO DE TODO EL APARTADO ESTUDIOS Y EXPERIENCIAS LABORALES    */
+.estudiosyexperienciaslaborales {
+    /*   FORMATO DEL APARTADO ESTUDIOS Y EXPERIENCIAS LABORALES   */
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.estudiosyexperienciaslaborales .contenido-seccion{
+    /*   FORMATO DEL CONTENIDO DEL APARTADO   */
+    max-width: 1100px;
+    margin: auto;
+}
+.estudiosyexperienciaslaborales h2{
+    /*   FORMATO DE LOS TITULOS DE LAS FILAS ESTUDIOS Y EXP LABORALES   */
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.estudiosyexperienciaslaborales .fila{
+    /*   FORMATO DE LAS FILAS DEL APARTADO   */
+    display: flex;
+}
+.estudiosyexperienciaslaborales .fila .col{
+    /*   FORMATO DE LAS COLUMNAS DE LAS FILAS DEL APARTADO   */
+    width: 49%;
+    padding: 0 20px;
+}
+.estudiosyexperienciaslaborales .fila h2{
+    /*   DAR FORMATO AL CONTENIDO DE LAS FILAS   */
+    font-size: 50px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.estudiosyexperienciaslaborales .fila .izquierda{
+    /*   FORMATO DE LA FILA IZQUIERDA DEL APARTADO   */
+    border-right: 2px solid #252a2e;
+}
+.estudiosyexperienciaslaborales .fila .derecha{
+    /*   FORMATO DE LA FILA DERECHA DEL APARTADO   */
+    border-left: 2px solid #252a2e;
+}
+.estudiosyexperienciaslaborales .fila .item{
+    /*   FORMATO DEL CONTENIDO DE LAS FILAS   */
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+.estudiosyexperienciaslaborales .fila .item h3{
+    /*   FORMATO DE LOS TITULOS DE LOS ESTUDIOS REALIZADOS Y LUGARES DONDE SE TRABAJO   */
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: aqua;
+    font-weight: bold;
+    display: block;
+}
+.estudiosyexperienciaslaborales .fila .item .fecha{
+    /*   FORMATO DE LAS FECHAS QUE SE REALIZARON LAS CAPACITACIONES Y EXPERIENCIAS LABORALES    */
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+.estudiosyexperienciaslaborales .fila .item p{
+    /*   FORMATO DEL TEXTO QUE ACOMPAÑA A LOS ESTUDIOS REALIZADOS Y LAS EXPERIENCIAS LABORALES   */
+    line-height: 24px;
+}
+.estudiosyexperienciaslaborales .fila .izq{
+    /*   FORMATO DE LA FILA IZQUIERDA   */
+    border-right: 2px;
+    margin-right: 20px;
+}
+.estudiosyexperienciaslaborales .fila .der{
+    /*   FORMATO DE LA FILA DERECHA   */
+    border-right: 2px;
+    margin-right: 20px;
+}
+
+
+/*    FORMATO DE TODO EL APARTADO CONTACTO    */
+.contacto{
+    /*   COLOCAR UNA IMAGEN AL APARTADO CONTACTO   */
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(img/fondo\ contacto2.jpeg);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 30px 0;
+    position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.contacto .contenido-seccion{
+    /*   FORMATO DEL CONTENIDO DEL APARTADO   */
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    /*   FORMATO DEL TITULO DEL APARTADO CONTACTO   */
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 500px;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    /*   FORMATO DEL CAMPO A COMPLETA EN EL APARTADO CONTACTO   */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    /*   FORMATO DEL BOTON PARA ENVIAR LA SOLICITUD DEL APARTADO CONTACTO   */
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/*   FORMATO DE LA PAGINA PARA ADAPTARSE A MOVILES RESPONSIVE    */
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 100px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .estudiosyexperienciaslaborales .fila{
+        display: block;
+    }
+    .estudiosyexperienciaslaborales .fila .col{
+        width: 90px;
+    }
+    .estudiosyexperienciaslaborales .fila .derecha{
+        margin-left: 20px;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+
+}

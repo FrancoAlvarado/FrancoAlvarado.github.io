@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        <!--   ENCABEZADO DE LA PAGINA   -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Franco Alvarado</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()"">SOBRE MI</a></a></li>
+                        <li><a href="#estudiosyexperienciaslaborales" onclick="seleccionar()">ESTUDIOS Y EXPERIENCIA LABORALES</a></a></li>
+                        <li><a href="#contacto" onclick="seleccionar()"">CONTACTO</a></a></li>
+
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarocultarmenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!--   APARTADO INICIO   -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/persona.png" alt="">
+                </div>
+                <h1>FRANCO ALVARADO</h1>
+                <h2>Licenciado en gestion de tecnologias de la informacion</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--   APARTADO SOBRE MI   -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mi</h2>
+                <p><span>Hola, soy Franco Maximiliano Alvarado.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quae in mollitia earum magnam necessitatibus dolore, cumque veritatis dignissimos quasi fugiat nihil corporis consectetur quibusdam repudiandae cum, debitis iusto id!</p>
+                <div class="fila">
+                    <!-- Datos personales-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Nacimiento</strong>
+                                19-02-1993
+                            </li>
+                            <li>
+                                <strong>Direccion</strong>
+                                Blandengues 1053, José C. Paz, Prov. de Buenos Aires (Argentina)
+                            </li>
+                            <li>
+                                <strong>Celular</strong>
+                                1167914174
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                francomaximiliano.alvarado@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Intereses-->
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Leer</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-solid fa-computer"></i>
+                                <span>Estudiar</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-sharp fa-solid fa-table-tennis-paddle-ball"></i>
+                                <span>Paddle</span>
+                            </div>
+                            <div class="interes">
+                                <i class="fa-duotone fa-mobile"></i>
+                                <span>Movil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--   APARTADO ESTUDIOS Y EXPERIENCIAS LABORALES   -->
+        <section id="estudiosyexperienciaslaborales" class="estudiosyexperienciaslaborales">
+            <div class="contenido-seccion">
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h2>Estudios</h2>
+                        <div class="item izq">
+                            <h3>Argentina Programa 4.0</h3>
+                            <span class="fecha">Periodo de Cursada 2022 - 2023</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deserunt eveniet tempore voluptates blanditiis explicabo tempora ea earum dolore obcaecati iusto dignissimos, nesciunt molestias? Non, dicta. Inventore modi autem mollitia?</p>
+                        </div>
+                        <div class="item izq">
+                            <h3>Licenciatura en Gestion de las Tecnologias de la informacion</h3>
+                            <span class="fecha">Periodo de Cursada 2021 - Actualidad</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt impedit voluptatibus accusantium. Veritatis id similique nesciunt, quisquam nihil in voluptatem assumenda, aperiam aspernatur fugiat, facere excepturi qui natus asperiores tenetur?</p>
+                        </div>
+                     </div>
+                     
+                     <div class="col derecha">
+                        <h2>Exp. Laboral</h2>
+                        <div class="item der">
+                            <h3>Empresa "xxxxxxxxxx"</h3>
+                            <span class="fecha">Periodo 2020 - 2023</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur dolore reprehenderit nesciunt. Suscipit aspernatur iure doloremque molestias. Temporibus perspiciatis at aut reprehenderit culpa. Autem dicta magnam voluptate vero rem!</p>
+                            
+                        </div>
+                        <div class="item der">
+                            <h3>Empresa "xxxxxxxxxx"</h3>
+                            <span class="fecha">Periodo de Cursada 2021 - Actualidad</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, cumque voluptates? Corrupti maiores error eveniet delectus nulla aliquid reprehenderit consequuntur, optio vero! Omnis, quos eius ratione consectetur culpa nihil sapiente.</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    APARTADO CONTACTO    -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <div class="col">
+                        <!--FORMULARIO-->
+                        <input type="text" placeholder="Nombres Completo">
+                        <input type="text" placeholder="Apellido">
+                        <input type="text" placeholder="Numero de Contacto">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Motivo del Contacto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+</body>
+</html>
